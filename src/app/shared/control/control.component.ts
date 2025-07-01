@@ -1,6 +1,7 @@
 import {
   Component,
   HostBinding,
+  HostListener,
   input,
   ViewEncapsulation,
 } from '@angular/core';
@@ -18,8 +19,11 @@ import {
   },
 })
 export class ControlComponent {
-  // @HostBinding('class') className = 'control';
   label = input.required<string>();
+  // @HostBinding('class') className = 'control';  >>>>>listening event from host is recommended
+  // @HostListener('click') onClick() {
+  //   console.log('clicked');
+  // }
   onClick() {
     console.log('clicked');
   }
