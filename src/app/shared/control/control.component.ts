@@ -27,8 +27,8 @@ export class ControlComponent {
   //   console.log('clicked');
   // }
   // constructor(private el: ElementRef) {}
-  private el = inject(ElementRef);
-  onClick() {
-    console.log(this.el);
-  }
+  // private el = inject(ElementRef);
+  // onClick() {
+  //   console.log(this.el);
+  // }
 }
