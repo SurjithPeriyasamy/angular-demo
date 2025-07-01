@@ -12,11 +12,15 @@ import {
   templateUrl: './control.component.html',
   styleUrl: './control.component.css',
   encapsulation: ViewEncapsulation.None,
-  // host: {
-  //   class: 'control',
-  // },
+  host: {
+    class: 'control',
+    '(click)': 'onClick()',
+  },
 })
 export class ControlComponent {
-  @HostBinding('class') className = 'control';
+  // @HostBinding('class') className = 'control';
   label = input.required<string>();
+  onClick() {
+    console.log('clicked');
+  }
 }
