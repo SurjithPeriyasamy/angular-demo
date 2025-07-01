@@ -1,11 +1,10 @@
-<div class="dashboard-item">
-  <article>
-    <header>
-      <img [src]="image().src" [alt]="image().alt" />
-      <h2>{{ title() }}</h2>
-    </header>
-    <ng-content></ng-content>
-    <!-- <div>
+<article>
+  <header>
+    <img [src]="image().src" [alt]="image().alt" />
+    <h2>{{ title() }}</h2>
+  </header>
+  <ng-content></ng-content>
+  <!-- <div>
       @if (currentStatus === 'online') {
       <p>Servers are online</p>
       <p>All systems are operational.</p>
@@ -17,5 +16,4 @@
       <p>Fetching server status failed.</p>
       }
     </div> -->
-  </article>
-</div>
+</article>
