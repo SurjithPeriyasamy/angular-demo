@@ -23,4 +23,10 @@ export class TicketsComponent {
 
     this.tickets.push(ticket);
   }
+  onCompleteTicket(id: string) {
+    this.tickets = this.tickets.map((ticket) => ({
+      ...ticket,
+      status: ticket.id === id ? 'closed' : 'open',
+    }));
+  }
 }
