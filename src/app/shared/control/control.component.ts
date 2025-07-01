@@ -17,7 +17,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   host: {
     class: 'control',
-    '(click)': 'onClick()',
+    // '(click)': 'onClick()',
   },
 })
 export class ControlComponent {
